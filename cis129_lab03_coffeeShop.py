@@ -134,7 +134,7 @@ print ('Total: $', f"{(sales_tax + sales_total):.2f}")
 
 print('\n')
 print ('C|_|  Thank you for shopping  C|_|')
-print ('My Coffee and Muffin Shop \n')
+print ('    My Coffee and  Muffin Shop \n')
 print (banner_one)
 
 
