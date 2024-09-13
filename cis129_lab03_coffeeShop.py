@@ -15,6 +15,9 @@
 
 coffee_price = 5
 muffin_price = 4
+# Add Item #3
+# Add Item #4
+
 tax_rate = .06
 
 banner_one = "****************************************"
@@ -30,6 +33,8 @@ print (banner_one)
 print ('My Coffee and Muffin Shop')
 coffee_amount = int (input ('Number of coffees bought? \n'))
 muffin_amount = int (input('Number of muffins bought? \n'))
+#input number for Item #3
+#input number for Item #4
 
 print (banner_one, ('\n'))
 
@@ -42,7 +47,10 @@ print (banner_one, ('\n'))
 
 coffee_total = coffee_price * coffee_amount
 muffin_total = muffin_price * muffin_amount
-sales_total = coffee_total + muffin_total
+# Determine Item 3 sales
+# Determine Item 4 sales
+
+sales_total = coffee_total + muffin_total # update to include items 3 and 4
 
 if coffee_amount == 1:
     coffee_label = 'Coffee'
@@ -53,6 +61,10 @@ if muffin_amount == 1:
     muffin_label = 'Muffin'
 else:
     muffin_label = 'Muffins'
+
+# Set singular or plural for Item 3
+
+# Set singular or plural for Item 4
 
 ##############################################################################
 # OUTPUT
@@ -78,6 +90,8 @@ print (banner_one)
 # convert int to str to display values as requested
 coffee_price_text = '$' + str(coffee_price)
 muffin_price_text = '$' + str(muffin_price)
+# Set Item 3 Price Text
+# Set Item 4 Price Text
 
 sales_tax = tax_rate * sales_total
 sales_tax_text = str(sales_tax)
@@ -92,11 +106,18 @@ print (coffee_amount, coffee_label, 'at', coffee_price_text, 'each: $',
        f"{coffee_total:.2f}")
 print (muffin_amount, muffin_label, 'at', muffin_price_text, 'each: $',
        f"{muffin_total:.2f}")
+# Print Item 3 line
+# Print Item 4 line
+
 print (int(tax_rate * 100),'\b% tax: $', sales_tax_text) 
 
 print (banner_two)
 print ('Total: $', f"{(sales_tax + sales_total):.2f}")
+
+# Print Thank You line
+
 print (banner_one)
+
 
 
 
