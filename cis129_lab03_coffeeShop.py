@@ -73,7 +73,7 @@ else:
 if burrito_amount == 1:
     burrito_label = 'Burrito'
 else:
-    coffee_label = 'Burritos'
+    burrito_label = 'Burritos'
     
 ##############################################################################
 # OUTPUT
@@ -126,7 +126,8 @@ print (banner_two)
 print ('Total: $', f"{(sales_tax + sales_total):.2f}")
 
 # Print Thank You line
-print ('C|_| Thank you for shopping My Coffee and Muffin Shop ---<@ ')
+print ('\nC|_| Thank you for shopping C|_|')
+print ('My Coffee and Muffin Shop \n')
 print (banner_one)
 
 
