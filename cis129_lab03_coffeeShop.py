@@ -2,9 +2,10 @@
 # David Vance
 # Professor Kevin Chang
 #
-# Coffee Shop prompts users to input the number of coffee and muffins sold,
-# calculates the total price per item, applies a sales tax, and then 
-# provides a receipt to include all the values.
+# Coffee Shop prompts users to input the number of coffee, muffins, smoothies,
+# and burritos sold, calculates the total price per item, applies a sales tax,
+# and then provides a receipt to include all necessary values and includes a
+# thank-you message.
 
 ##############################################################################
 # I learned to program by setting initial values up front.  Having values 
@@ -15,8 +16,8 @@
 
 coffee_price = 5
 muffin_price = 4
-smoothie_price = 3 # Add Item #3
-burrito_price = 5 # Add Item #4
+smoothie_price = 3 # Add Item 3
+burrito_price = 5 # Add Item 4
 
 tax_rate = .06
 
@@ -25,7 +26,8 @@ banner_two = "---------"
 
 ##############################################################################
 # INPUTS
-# Prompt the user for the number of coffees and muffins sold
+# Prompt the user for the number of coffees, muffins, smoothies and burritos
+# sold.
 ##############################################################################
 
 print (banner_one)
@@ -50,7 +52,7 @@ muffin_total = muffin_price * muffin_amount
 smoothie_total = smoothie_price * smoothie_amount # Determine Item 3 sales
 burrito_total = burrito_price * burrito_amount # Determine Item 4 sales
 
-# update to include items 3 and 4
+# update sales_total to include Items 3 and 4
 sales_total = coffee_total + muffin_total + smoothie_total + burrito_total 
 
 if coffee_amount == 1:
@@ -100,7 +102,7 @@ print (banner_one)
 coffee_price_text = '$' + str(coffee_price)
 muffin_price_text = '$' + str(muffin_price)
 smoothie_price_text = '$' + str(smoothie_price) # Set Item 3 Price Text
-burrito_price_text = '$' + str(burrito_price)# Set Item 4 Price Text
+burrito_price_text = '$' + str(burrito_price) # Set Item 4 Price Text
 
 sales_tax = tax_rate * sales_total
 sales_tax_text = str(sales_tax)
@@ -125,8 +127,13 @@ print (int(tax_rate * 100),'\b% tax: $', sales_tax_text)
 print (banner_two)
 print ('Total: $', f"{(sales_tax + sales_total):.2f}")
 
-# Print Thank You line
-print ('\nC|_| Thank you for shopping C|_|')
+# Print Thank You block
+# My personal style is to print a newline at the end of a previous line in
+# the same logic block, else as it's own line in a new block.  It simply
+# feels cleaner.
+
+print('\n')
+print ('C|_|  Thank you for shopping  C|_|')
 print ('My Coffee and Muffin Shop \n')
 print (banner_one)
 
